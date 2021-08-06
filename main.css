@@ -19,6 +19,13 @@ body {
     width: 50%;
 }
 
+@media(max-width:1000px) {
+    body {
+        padding: 2rem;
+        width: auto;
+    }
+}
+
 h1 {
     font-weight: 500;
     font-size: 24pt;
