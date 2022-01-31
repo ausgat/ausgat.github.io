@@ -1,0 +1,93 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>A. Gatchell</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      line-height: 1.5em;
+    }
+
+    body {
+      background-color: rgb(240, 240, 240);
+      color: rgb(40, 40, 40);
+      font-size: 1em;
+      font-family: Monaco, 'Courier New', Courier, monospace;
+      padding: 8em 0;
+    }
+
+    p {
+      margin-bottom: 1.5em;
+    }
+
+    h1 {
+      font-size: 1em;
+      font-weight: normal;
+      text-align: center;
+      margin-bottom: 1.5em;
+    }
+
+    a {
+      color: rgb(40, 40, 40);
+      text-decoration: underline;
+    }
+
+    #outer {
+      width: 100%;
+      display: -moz-box;
+      -moz-box-pack: center;
+      -moz-box-align: center;
+      display: -webkit-box;
+      -webkit-box-pack: center;
+      -webkit-box-align: center;
+      display: box;
+      box-pack: center;
+      box-align: center;
+    }
+
+    #inner {
+      width: 500px;
+      border: 0.1rem solid rgb(40, 40, 40);
+      border-radius: 0.5em;
+      padding: 20px;
+    }
+
+    .date {
+      text-align: right;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: rgb(40, 60, 88);
+        color: rgb(238, 238, 226);
+      }
+
+      a {
+        color: rgb(238, 238, 226);
+        text-decoration: underline;
+      }
+
+      #inner {
+        border-color: rgb(238, 238, 226);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="outer">
+    <div id="inner">
+      <h1>Austin Gatchell's Website</h1>
+      <p>Hi, my name is Austin. This is my website. When I have something to
+        show you, I'll put it here.</p>
+      <p>In the meantime, you can see if I have anything on
+        <a href="https://twitter.com/ausgat">Twitter</a> or
+        <a href="https://github.com/ausgat">GitHub</a>.</p>
+      <div class="date">31 Jan, 2022</div>
+    </div>
+  </div>
+</body>
+
+</html>
