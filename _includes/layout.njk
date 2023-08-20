@@ -3,7 +3,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/style.css" />
-  <title>{{ if title then title + " &em; " end }}Austin Gatchell</title>
+  <title>{% if title %}{{ title }} &em; {% endif %}Austin Gatchell</title>
   <script src="/script.js"></script>
 </head>
 <body>
