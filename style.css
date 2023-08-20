@@ -151,6 +151,11 @@ body.dark input[type=submit]:active {
   width: 35em;
 }
 
+#container.mobile {
+  padding: 2em;
+  width: 100%;
+}
+
 #header {
   display: flex;
   margin-bottom: 4em;
