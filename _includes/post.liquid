@@ -1,0 +1,12 @@
+---
+layout: layout.liquid
+---
+<h1>
+  <a href="{{ url }}" class="title">{{ title }}</a>
+</h1>
+<p>
+  {% for tag in tags -%}
+    <a href="#" class="tag">#{{ tag }}</a>
+  {% endfor %}
+</p>
+{{ content }}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/bundle.css" />
+    <title>
+      {% if title %}
+        {{ title }} —
+      {% endif %}Austin Gatchell
+    </title>
+    <script src="/script.js"></script>
+  </head>
+  <body>
+    <div id="container" class="mobile">
+      <div id="header">
+        <div id="name">
+          <a href="/">Austin Gatchell
+            {% if title %}
+              <span class="return">↩</span>
+            {% endif %}
+          </a>
+        </div>
+        <div id="links">
+          <span class="subtitle">this is where i keep all my stuff</span>
+          <div id="light-mode" onclick="switchTheme()">
+            <div id="light-switch" class="left">️</div>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="section-top">
+          {{ content }}
+        </div>
+        <div class="section">
+          <div class="profile">
+            <div class="profile-text">
+              <h2>Who are you?</h2>
+              <p>
+                My name is Austin Gatchell, and I'm just a person on the internet.
+                I make things every now and again.
+              </p>
+            </div>
+            <div class="profile-pic"><img src="/me.jpeg" /></div>
+          </div>
+        </div>
+        <div class="section">
+          <h2>I like you</h2>
+          <p>
+            Oh, wow, that's a little soon, but ok. I'm on
+            <a href="https://twitter.com/ausgat">Twitter</a>
+            and
+            <a href="https://github.com/ausgat">GitHub</a>
+            if you want more of me.
+          </p>
+          <form action="" method="get">
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Subscribe to my newsletter"
+              required />
+            <input type="Submit" value="Don't Subscribe" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
