@@ -107,31 +107,18 @@ input[type=submit]:active {
   width: 35em;
 }
 
-@media (max-width: 40em) {
-  #container {
-    padding: 2em 0;
-    width: 100%;
-  }
-
-  #header {
-    padding: 0 2em;
-  }
-
-  #content {
-    padding: 0 2em;
-  }
-}
-
 #header {
   display: flex;
   margin-bottom: 4em;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 
 #name {
   font-size: 1.4em;
+  flex-shrink: 0;
 }
 
 #name > a {
@@ -168,6 +155,7 @@ input[type=submit]:active {
 
 #light-mode {
   display: inline-block;
+  flex-shrink: 0;
   width: 2rem;
   height: 1rem;
   border: 0.1rem solid var(--light-color);

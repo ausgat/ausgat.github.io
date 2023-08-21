@@ -1,0 +1,18 @@
+@media (max-width: 40em) {
+  #container {
+    padding: 2em 0;
+    width: 100%;
+  }
+
+  #header {
+    padding: 0 2em;
+  }
+
+  #content {
+    padding: 0 2em;
+  }
+
+  .subtitle {
+    display: none;
+  }
+}
