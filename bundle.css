@@ -107,31 +107,18 @@ input[type=submit]:active {
   width: 35em;
 }
 
-@media (max-width: 40em) {
-  #container {
-    padding: 2em 0;
-    width: 100%;
-  }
-
-  #header {
-    padding: 0 2em;
-  }
-
-  #content {
-    padding: 0 2em;
-  }
-}
-
 #header {
   display: flex;
   margin-bottom: 4em;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 
 #name {
   font-size: 1.4em;
+  flex-shrink: 0;
 }
 
 #name > a {
@@ -168,6 +155,7 @@ input[type=submit]:active {
 
 #light-mode {
   display: inline-block;
+  flex-shrink: 0;
   width: 2rem;
   height: 1rem;
   border: 0.1rem solid var(--light-color);
@@ -277,15 +265,28 @@ a.tag:hover {
 
 .profile-pic {
   display: inline-block;
+  flex-shrink: 0;
   width: 5em;
   height: 5em;
   margin-top: 1em;
 }
 
 .profile-pic img {
+  position: absolute;
   width: 5em;
   height: 5em;
   border-radius: 2.5em;
+  transition: all var(--transition-speed);
+}
+
+.profile-pic img:hover {
+  width: 8em;
+  height: 8em;
+  margin-left: -1.5em;
+  margin-top: -1.5em;
+  border-radius: 4em;
+  box-shadow: 0 0.5em 2em rgba(0, 0, 0, 0.2) ;
+  transition: all var(--transition-speed);
 }
 
 body.dark {
@@ -384,4 +385,23 @@ body.dark a.tag:hover {
   color: var(--main-color-dark);
   border-color: var(--main-color-dark);
   text-shadow: none;
+}
+
+@media (max-width: 40em) {
+  #container {
+    padding: 2em 0;
+    width: 100%;
+  }
+
+  #header {
+    padding: 0 2em;
+  }
+
+  #content {
+    padding: 0 2em;
+  }
+
+  .subtitle {
+    display: none;
+  }
 }
