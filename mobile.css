@@ -15,4 +15,8 @@
   .subtitle {
     display: none;
   }
+
+  body.dark .subtitle {
+    display: none;
+  }
 }
