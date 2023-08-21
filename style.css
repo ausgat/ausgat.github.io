@@ -277,13 +277,26 @@ a.tag:hover {
 
 .profile-pic {
   display: inline-block;
+  flex-shrink: 0;
   width: 5em;
   height: 5em;
   margin-top: 1em;
 }
 
 .profile-pic img {
+  position: absolute;
   width: 5em;
   height: 5em;
   border-radius: 2.5em;
+  transition: all var(--transition-speed);
+}
+
+.profile-pic img:hover {
+  width: 8em;
+  height: 8em;
+  margin-left: -1.5em;
+  margin-top: -1.5em;
+  border-radius: 4em;
+  box-shadow: 0 0.5em 2em rgba(0, 0, 0, 0.2) ;
+  transition: all var(--transition-speed);
 }
