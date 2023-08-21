@@ -2,29 +2,45 @@ function setDarkTheme() {
   var lightSwitch = document.getElementById("light-switch");
   lightSwitch.className = "right";
   document.body.className = "dark";
+  setModeCookie("dark");
 }
 
 function setLightTheme() {
   var lightSwitch = document.getElementById("light-switch");
   lightSwitch.className = "left";
   document.body.className = "";
+  setModeCookie("light");
 }
 
 function switchTheme() {
   var lightSwitch = document.getElementById("light-switch");
   if (lightSwitch.className === "left") {
     setDarkTheme();
-    document.cookie = "dark";
   } else if (lightSwitch.className === "right") {
     setLightTheme();
-    document.cookie = "light";
   }
 }
 
+function setModeCookie(value) {
+  document.cookie = "dark_mode=" + value + "; path=/";
+  console.log(document.cookie);
+}
+
+function getModeCookie() {
+  var cookieValue = document.cookie
+    .split(';')
+    .find((row) => row.startsWith("dark_mode="))
+    ?.split("=")[1];
+
+  return cookieValue;
+}
+
 window.onload = function () {
-  if (document.cookie === "dark") {
+  var mode = getModeCookie();
+
+  if (mode === "dark") {
     setDarkTheme();
-  } else if (document.cookie === "light") {
+  } else if (mode === "light") {
     setLightTheme();
   } else {
     if (
