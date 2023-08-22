@@ -238,13 +238,14 @@ a.title:hover {
 }
 
 a.tag {
-  font-size: 0.8em;
+  font-size: 0.8rem;
   text-decoration: none;
   color: var(--light-color);
+  line-height: 1rem;
   border: 0.1rem solid var(--light-color);
-  border-radius: 1em;
-  padding: 0.1em 0.5em;
-  margin-right: 0.5em;
+  border-radius: 0.8rem;
+  padding: 0.1rem 0.5rem;
+  margin-right: 0.5rem;
 }
 
 a.tag:hover {

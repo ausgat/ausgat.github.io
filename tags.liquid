@@ -1,0 +1,19 @@
+---
+layout: layout.liquid
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+permalink: /tags/{{ tag }}/
+---
+
+<h2>Posts Tagged "{{ tag }}"</h2>
+<ul class="posts">
+  {% assign taglist = collections[tag] %}
+  {%- for post in taglist | reverse -%}
+    <li>
+      <span class="date">{{ post.date | date: "%Y.%m.%e" }}</span>
+      <a href="{{ post.url }}">{{ post.data.title }}</a>
+    </li>
+  {%- endfor -%}
+</ul>

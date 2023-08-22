@@ -4,11 +4,11 @@ layout: layout.liquid
 <h1>
   <a href="{{ url }}" class="title">{{ title }}</a>
   <span class="mini-text">
-    • {{ date | date: "%Y.%m.%e" }}</span>
+    • {{ date | date: "%Y.%m.%d" }}</span>
 </h1>
 <p>
   {% for tag in tags -%}
-    <a href="#" class="tag">#{{ tag }}</a>
+    <a href="/tags/{{ tag }}" class="tag">#{{ tag }}</a>
   {% endfor %}
 </p>
 {{ content }}
