@@ -1,10 +1,10 @@
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("fonts/*");
   eleventyConfig.addPassthroughCopy("bundle.css");
-  eleventyConfig.addWatchTarget("style.css");
-  eleventyConfig.addWatchTarget("style-dark.css");
-  eleventyConfig.addWatchTarget("mobile.css");
-  eleventyConfig.addPassthroughCopy("script.js");
-  eleventyConfig.addWatchTarget("script.js");
-  eleventyConfig.addPassthroughCopy("me.jpeg");
+  eleventyConfig.addWatchTarget("_includes/style.css");
+  eleventyConfig.addWatchTarget("_includes/style-dark.css");
+  eleventyConfig.addWatchTarget("_includes/mobile.css");
+  eleventyConfig.addPassthroughCopy("js/script.js");
+  eleventyConfig.addWatchTarget("js/script.js");
+  eleventyConfig.addPassthroughCopy("images/me.jpeg");
 };

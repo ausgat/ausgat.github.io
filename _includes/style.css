@@ -126,7 +126,7 @@ input[type=submit]:active {
   text-decoration: none;
 }
 
-.return {
+.mini-text {
   color: var(--light-color);
   font-size: 0.8em;
 }
@@ -214,16 +214,18 @@ input[type=submit]:active {
 }
 
 #content ul.posts li {
+  display: flex;
   font-size: 1.2em;
+  line-height: 1.2em;
   margin: 0.5em 0;
   padding: 0;
 }
 
 .date {
-  float: left;
   color: var(--light-color);
   margin-right: 1em;
   width: 5em;
+  flex-shrink: 0;
 }
 
 a.title {
