@@ -29,27 +29,27 @@ body {
 }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-weight: 500;
-  margin: 1em 0;
+  margin: 1rem 0;
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: normal;
-  margin: 1em 0;
+  margin: 1rem 0;
 }
 
 h3 {
-  font-size: 1em;
-  font-weight: bold;
-  margin: 1em 0;
+  font-size: 1.2em;
+  font-weight: normal;
+  margin: 1rem 0;
 }
 
 p {
   font-size: 1em;
   font-weight: normal;
-  margin: 1em 0;
+  margin: 1rem 0;
   line-height: 2em;
 }
 

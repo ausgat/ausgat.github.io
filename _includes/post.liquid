@@ -3,6 +3,8 @@ layout: layout.liquid
 ---
 <h1>
   <a href="{{ url }}" class="title">{{ title }}</a>
+  <span class="mini-text">
+    • {{ date | date: "%Y.%m.%e" }}</span>
 </h1>
 <p>
   {% for tag in tags -%}
