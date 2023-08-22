@@ -1,4 +1,8 @@
 @media (max-width: 40em) {
+  html, body {
+    overflow-x: hidden;
+  }
+
   #container {
     padding: 2em 0;
     width: 100%;
@@ -16,7 +20,7 @@
     display: none;
   }
 
-  body.dark .subtitle {
+  body.light .subtitle {
     display: none;
   }
 }

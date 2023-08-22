@@ -1,0 +1,97 @@
+body.light {
+  color: var(--main-color);
+  background-color: var(--background-color);
+}
+
+
+body.light .date {
+  color: var(--light-color);
+}
+
+body.light a {
+  color: var(--main-color)
+}
+
+body.light a:hover {
+  color: var(--highlight-color);
+  text-shadow: none;
+}
+
+body.light input[type=text] {
+  color:var(--main-color);
+  border-color: var(--light-color)
+}
+
+body.light input[type=text]:focus {
+  border-color: var(--main-color);
+}
+
+body.light input::placeholder {
+  color: var(--light-color);
+}
+
+body.light input[type=submit] {
+  color: var(--background-color);
+  background-color: var(--light-color);
+}
+
+body.light input[type=submit]:hover {
+  background-color: var(--main-color);
+}
+
+body.light input[type=submit]:active {
+  background-color: var(--light-color);
+}
+
+body.light #name > a {
+  color: var(--main-color);
+}
+
+body.light #name > a:hover {
+  text-shadow: none;
+}
+
+body.light .mini-text {
+  color: var(--light-color);
+}
+
+body.light .subtitle {
+  color: var(--light-color);
+  display: inline-block;
+}
+
+body.light #links a {
+  color: var(--light-color);
+  text-shadow: none;
+}
+
+body.light #links a:hover {
+  color: var(--main-color);
+}
+
+body.light #light-mode {
+  border-color: var(--light-color);
+}
+
+body.light #content .section {
+  border-top: var(--light-color) solid 0.1em;
+}
+
+body.light a.title {
+  color: var(--main-color);
+}
+
+body.light a.title:hover {
+  color: var(--highlight-color);
+}
+
+body.light a.tag {
+  color: var(--light-color);
+  border-color: var(--light-color);
+}
+
+body.light a.tag:hover {
+  color: var(--main-color);
+  border-color: var(--main-color);
+  text-shadow: none;
+}

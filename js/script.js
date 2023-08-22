@@ -1,14 +1,14 @@
 function setDarkTheme() {
   var lightSwitch = document.getElementById("light-switch");
   lightSwitch.className = "right";
-  document.body.className = "dark";
+  document.body.className = "";
   setModeCookie("dark");
 }
 
 function setLightTheme() {
   var lightSwitch = document.getElementById("light-switch");
   lightSwitch.className = "left";
-  document.body.className = "";
+  document.body.className = "light";
   setModeCookie("light");
 }
 
@@ -48,9 +48,9 @@ window.onload = function () {
   } else {
     if (
       window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches
+      !window.matchMedia("(prefers-color-scheme: dark)").matches
     ) {
-      setDarkTheme();
+      setLightTheme();
     }
   }
   window
