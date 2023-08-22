@@ -56,11 +56,13 @@ window.onload = function () {
   window
     .matchMedia("(prefers-color-scheme: dark)")
     .addEventListener("change", (event) => {
-      var lightSwitch = document.getElementById("light-switch");
-      if (event.matches) {
-        setDarkTheme();
-      } else {
-        setLightTheme();
+      if (mode === "") {
+        var lightSwitch = document.getElementById("light-switch");
+        if (event.matches) {
+          setDarkTheme();
+        } else {
+          setLightTheme();
+        }
       }
     });
     
