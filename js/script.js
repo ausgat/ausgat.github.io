@@ -13,11 +13,14 @@ function setLightTheme() {
 }
 
 function switchTheme() {
+  var subtitle = document.getElementsByClassName("subtitle")[0];
   var lightSwitch = document.getElementById("light-switch");
   if (lightSwitch.className === "left") {
     setDarkTheme();
+    subtitle.textContent = "ah much better";
   } else if (lightSwitch.className === "right") {
     setLightTheme();
+    subtitle.textContent = "take breaks to avoid eye strain";
   }
 }
 
