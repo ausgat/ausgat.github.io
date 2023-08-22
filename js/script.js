@@ -63,4 +63,10 @@ window.onload = function () {
         setLightTheme();
       }
     });
+    
+    var subtitle = document.getElementsByClassName("subtitle")[0];
+    if (subtitle) {
+        var random_n = (Math.floor(Math.random() * quotes.length));
+        subtitle.textContent = quotes[random_n];
+    }
 };

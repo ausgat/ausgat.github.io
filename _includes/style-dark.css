@@ -51,7 +51,7 @@ body.dark #name > a:hover {
   text-shadow: none;
 }
 
-body.dark .return {
+body.dark .mini-text {
   color: var(--light-color-dark);
 }
 
