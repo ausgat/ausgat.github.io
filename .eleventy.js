@@ -4,9 +4,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addWatchTarget("_includes/style.css");
   eleventyConfig.addWatchTarget("_includes/style-light.css");
   eleventyConfig.addWatchTarget("_includes/mobile.css");
-  eleventyConfig.addPassthroughCopy("js/script.js");
-  eleventyConfig.addPassthroughCopy("js/random_tagline.js");
-  eleventyConfig.addWatchTarget("js/random_tagline.js");
-  eleventyConfig.addWatchTarget("js/script.js");
+  eleventyConfig.addPassthroughCopy("js");
+  eleventyConfig.addWatchTarget("js");
+  eleventyConfig.addPassthroughCopy("styles")
+  eleventyConfig.addWatchTarget("styles");
   eleventyConfig.addPassthroughCopy("images");
+  eleventyConfig.addWatchTarget("images");
 };

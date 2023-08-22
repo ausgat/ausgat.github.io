@@ -2,6 +2,7 @@
 layout: post.liquid
 title: A Start
 date: 2023-08-21
+style: a-start.css
 tags:
 - post
 - meta
@@ -31,8 +32,12 @@ There's a lot of HTML, CSS, and JavaScript involved too. I never was an expert i
 
 I want the user to enjoy browsing my website. While the design is simple, I plan to include a lot of little things that delight. I use emojis as icons because they're fun and easy to recognize. (For some reason, that sentence has some serious "fellow kids" vibes.) The dark mode switch is animated. My profile picture at the bottom balloons up when you hover over it. Links in the dark theme have a subtle green glow when you hover over them, reminding you of glow-in-the-dark toys.
 
+<div class="force-dark">
+
 ## De-light
 
 Everyone uses dark mode nowadays, so it's a no-brainer to include it. One of my primary design principles is being kind to the user. I want the user to be comfortable when using my website, so I try to respect the user's preferences and set dark mode automatically depending on their system setting. There's also the little switch in the top-right corner so they can toggle dark mode manually. The website stores a cookie to remember the user's setting.
 
 As of writing, my website is light-colored by default. When it detects that the user wants dark mode, there's a brief flash of light before it switches to dark mode. I can't figure out how to stop it from flashing, so as a stop-gap measure, I intend to set it to dark mode by default.
+
+</div>

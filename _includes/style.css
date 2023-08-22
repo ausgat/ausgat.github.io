@@ -302,21 +302,3 @@ a.tag:hover {
   box-shadow: 0 0.5em 2em rgba(0, 0, 0, 0.2) ;
   transition: all var(--transition-speed);
 }
-
-.floating-technology {
-  float: right;
-  left: 5rem;
-  margin-left: -5rem;
-  animation: floating-technology 5s ease-in-out infinite;
-}
-
-.floating-technology img {
-  width: 15rem;
-  height: 15rem;
-}
-
-@keyframes floating-technology {
-  0% { transform: translate(5rem, 0rem); }
-  50% { transform: translate(5rem, 1rem); }
-  100% { transform: translate(5rem, -0rem); }
-}
