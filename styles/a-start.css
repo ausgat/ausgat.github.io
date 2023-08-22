@@ -1,0 +1,32 @@
+.floating-technology {
+  float: right;
+  left: 5rem;
+  margin-left: -5rem;
+  animation: floating-technology 5s ease-in-out infinite;
+}
+
+.floating-technology img {
+  width: 15rem;
+  height: 15rem;
+}
+
+@keyframes floating-technology {
+  0% { transform: translate(5rem, 0rem); }
+  50% { transform: translate(5rem, 1rem); }
+  100% { transform: translate(5rem, -0rem); }
+}
+
+.force-dark {
+  padding: 1em;
+  border-radius: 0.5em;
+  color: var(--main-color-dark);
+  background-color: var(--background-color-dark);
+}
+
+.force-dark h2 {
+  margin-top: 0;
+}
+
+.force-dark p {
+  margin-bottom: 0;
+}

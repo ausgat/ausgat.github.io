@@ -303,24 +303,6 @@ a.tag:hover {
   transition: all var(--transition-speed);
 }
 
-.floating-technology {
-  float: right;
-  left: 5rem;
-  margin-left: -5rem;
-  animation: floating-technology 5s ease-in-out infinite;
-}
-
-.floating-technology img {
-  width: 15rem;
-  height: 15rem;
-}
-
-@keyframes floating-technology {
-  0% { transform: translate(5rem, 0rem); }
-  50% { transform: translate(5rem, 1rem); }
-  100% { transform: translate(5rem, -0rem); }
-}
-
 body.light {
   color: var(--main-color);
   background-color: var(--background-color);
